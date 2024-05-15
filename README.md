@@ -1,5 +1,5 @@
 # Drone_App
-Drone_App  task
+Drone App task solution with the following technologies: Ejs, Express.js, Mongoose, and Mongodb. 
 
 
 ![IMG_20230711_163959](https://github.com/Emm-Anuel100/Drone_App/assets/125787874/277acce6-40ee-4455-b3c4-09c9c5468988)
