@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Title -->
+  <title>Drones</title>
+</head>
+<body>
+  <header>
+   <h1>Drones</h1>
+
+   <nav>
+    <a href="#" id="nav_home">Home</a>
+    <a href="#" id="nav_about">About</a>
+    <a href="#" id="nav_contact">Contact</a>
+    <a href="#" id="nav_load-drone">Load Drone</a>
+    <a href="#" id="nav_register-drone">Register Drone</a>
+ </nav>
+   </header>
+
+
+     
+   
+  <form action="/Drone" method="post" id="form" onsubmit="return validate()"> <br>
+    <h3>* Register your drone</h3> <br>
+    <input type="text" name="serial" placeholder="Serial number" required="" id="text"> <br><br>
+    <input type="text" name="model" placeholder="Drone model" required="" id="text"> <br><br>
+    <input type="number" name="weight1"  required="" id="text" placeholder="weight of drone (kg)" class="weight"> <br><br>
+    <input type="number" name="capacity" id="text" placeholder="battery capacity"> <br><br><br>
+    <button type="submit" id="button">Register</button>
+  </form>
+
+
+
+
+
+   <style type="text/css">
+     *{
+      padding: 0;
+      margin: 0;
+      scroll-behavior: smooth;
+      width: 100%;
+      outline: none;
+      transition: all linear .5s;
+     }
+     html{
+      font-size: 97.7%;
+      font-family: 'Poppins', sans-serif;
+     }
+     body{
+      height: 100vh;
+      background: #fff;
+      background-size: cover;
+      background-size: 150vh;
+      overflow-x: hidden;
+     }
+     header{
+      display: flex;
+      display: -webkit-flex;
+      top: 0;left: 0;right: 0;
+      position: fixed;
+      padding: 1rem 6%;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      background:  rgb(7, 7, 7);
+      height: 80px;
+      z-index: 900;
+     }
+     header > h1{
+      font-size: 1.8rem;
+      border: solid 1px rgb(182, 51, 199);
+      color: rgb(182, 51, 199);
+      width: 10rem;
+      text-align: center;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 7px 0;
+      border-radius: 1px;
+     }
+     nav {
+      display: flex;
+      display: -webkit-flex;
+      width: 47%;
+      position: relative;
+      right: 10rem;
+     }
+     nav a{
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #fff;
+      padding: 0.8rem 0;
+     }
+     nav a:nth-child(1){
+      width: 8rem;
+     }
+     nav a:nth-child(2){
+      width: 8rem;
+     }
+     nav a:nth-child(3){
+      width: 8rem;
+     }
+     nav a:nth-child(4){
+      width: 8rem;
+     }
+     nav a:nth-child(5){
+      width: 8rem;
+      color: rgb(182, 51, 199);
+     }
+     #form{
+    position: relative;
+    top: 14rem;
+    width: 32rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px rgb(175, 172, 175);
+    padding: 2rem 3rem;
+    left: 28%;
+
+    animation-name: scale;
+    animation-duration: 1.5s;
+    transition: linear all 1s;
+    animation-delay: 0.3s;
+  }
+  #form > h3{
+    text-transform:uppercase;
+    color: rgb(182, 51, 199);
+    font-weight: 600;
+  }
+  input#text{
+    letter-spacing: 1px;
+    font-size: 13px;
+    width: 30rem;
+    height: 2.8rem;
+    color: #000;
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  input#text:hover{
+    border-bottom: 1px solid rgb(182, 51, 199);
+  }
+  #button{
+    width: 8rem;
+    height: 2.6rem;
+    border: none;
+    position: relative;
+    left: 40%;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color:  rgb(182, 51, 199);
+    color: white;
+    font-weight: 700;
+  }
+  #button:hover,:focus{
+    transition: all 0.1s;
+    border: 1px solid rgb(182, 51, 199);
+    background-color:  white;
+    color:  rgb(182, 51, 199);
+  }
+ 
+
+  @keyframes scale{
+    40%{
+      transform:scale(1.05);
+    }
+    100%{
+      transform:scale(1);
+    }
+  }
+   </style>
+
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+
+  
+</body>
+</html>

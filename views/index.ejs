@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Title -->
+  <title><%=title%></title>
+</head>
+<body>
+   
+  
+   <table>
+      <h1>Registered Drones</h1>
+      <thead>
+         <th>Serial </th>
+         <th>Model</th>
+         <th>Weight(kg)</th>
+         <th>Capacity(%)</th>
+      </thead>
+
+      <% for(var i =0; i < drone.length; ++i) {%>
+      <tr>
+         <td><%=drone[i].serial%></td>
+         <td><%=drone[i].model%></td>
+         <td><%=drone[i].weight1%></td>
+         <td><%=drone[i].capacity%></td>
+      </tr>
+      <%
+   }%>
+   </table>
+
+
+<br><br><br><br>
+   
+   <table>
+      <h1> Items loaded in Drones </h1>
+      <thead>
+         <th>Name </th>
+         <th>Weight</th>
+         <th>code</th>
+      </thead>
+
+      <% for(var i =0; i < load.length; ++i) {%>
+      <tr>
+         <td><%=load[i].dronename%></td>
+         <td><%=load[i].weight%></td>
+         <td><%=load[i].code%></td>
+      </tr>
+      <%
+   }%>
+   </table>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
